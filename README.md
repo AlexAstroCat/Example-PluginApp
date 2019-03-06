@@ -1,10 +1,10 @@
 # PluginApp
 
+<img align="right" src="Screenshots/AccountTab.png">
+
 This is an example project that demonstrates the use of plugin frameworks within iOS applications.
 
 This app assumes that multiple tabs in an application will be built and maintained by different teams. To support a flexible development model, the functionality for each tab is encapsulated in its own framework. The plugins are loaded at runtime and combined into a single tabbed app.
-
-![demo](Screenshots/AccountTab.png)
 
 ## Frameworks
 
