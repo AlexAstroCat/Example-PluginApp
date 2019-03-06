@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return View controller.
  */
-+ (nullable UIViewController*)newTabViewController;
+- (nullable UIViewController*)newTabViewController;
 
 @end
 

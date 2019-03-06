@@ -11,6 +11,7 @@
 
 @implementation PluginManager {
     NSArray<Class> *_pluginClasses;
+    NSArray<id<TabProvider>> *_tabProviders;
 }
 
 + (PluginManager *)sharedManager {
@@ -53,14 +54,29 @@
     return _pluginClasses;
 }
 
+- (NSArray<id<TabProvider>> *)tabProviders {
+    if (!_tabProviders) {
+        NSMutableArray<id<TabProvider>> *tabProviders = NSMutableArray.new;
+
+        for (Class tabProviderClass in self.pluginClasses) {
+            if (![tabProviderClass conformsToProtocol:@protocol(TabProvider)]) {
+                continue;
+            }
+            
+            id<TabProvider> provider = [[tabProviderClass alloc] init];
+            if (provider) {
+                [tabProviders addObject:provider];
+            }
+        }
+        _tabProviders = tabProviders.copy;
+    }
+    return _tabProviders;
+}
+
 - (NSArray<UIViewController*> *)tabViewControllers {
     NSMutableArray<UIViewController*> *tabControllers = NSMutableArray.new;
 
-    for (Class<TabProvider> tabProvider in self.pluginClasses) {
-        if (![tabProvider conformsToProtocol:@protocol(TabProvider)]) {
-            continue;
-        }
-
+    for (id<TabProvider> tabProvider in self.tabProviders) {
         UIViewController *controller = [tabProvider newTabViewController];
         if (controller != nil) {
             [tabControllers addObject:controller];

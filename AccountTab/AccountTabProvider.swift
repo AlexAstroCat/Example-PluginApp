@@ -10,7 +10,7 @@ import UIKit
 import PluginProvider
 
 class AccountTabProvider: NSObject, TabProvider {
-    static func newTabViewController() -> UIViewController? {
-        return UIStoryboard(name: "Storyboard", bundle: Bundle(for: self)).instantiateInitialViewController()
+    func newTabViewController() -> UIViewController? {
+        return UIStoryboard(name: "Storyboard", bundle: Bundle(for: type(of: self))).instantiateInitialViewController()
     }
 }

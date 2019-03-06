@@ -10,6 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol TabProvider;
+
 /**
  Class used to manage plugins. This is implemented in a separate framework so that both the application, and the plugins, are able to reference the framework.
  */
@@ -24,6 +26,11 @@ NS_ASSUME_NONNULL_BEGIN
  Array of classes that support principle classes, capable of being used as a plugin.
  */
 @property (nonatomic, strong, readonly) NSArray<Class> *pluginClasses;
+
+/**
+ Array of tab provider plugins.
+ */
+@property (nonatomic, strong, readonly) NSArray<id<TabProvider>> *tabProviders;
 
 /**
  Returns the array of tab controllers exposed by the various plugins.

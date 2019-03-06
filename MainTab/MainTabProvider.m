@@ -11,7 +11,7 @@
 
 @implementation MainTabProvider
 
-+ (UIViewController *)newTabViewController {
+- (UIViewController *)newTabViewController {
     return [[UIStoryboard storyboardWithName:@"Storyboard" bundle:[NSBundle bundleForClass:self.class]] instantiateInitialViewController];
 }
 
