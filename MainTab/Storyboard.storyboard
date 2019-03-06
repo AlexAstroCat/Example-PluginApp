@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CNh-ur-fMG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="gQP-n7-0xl">
+            <objects>
+                <navigationController id="CNh-ur-fMG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Main" image="MainTab" id="SGM-aq-muv"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rdc-pg-m2X">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9VY-IY-dQT" kind="relationship" relationship="rootViewController" id="wvY-Ok-uCd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hW9-O4-dfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-489" y="65"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="Dkn-ae-DJw">
+            <objects>
+                <viewController id="9VY-IY-dQT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ngY-CP-cHm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the main tab" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53j-bf-pT9">
+                                <rect key="frame" x="113" y="323" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="53j-bf-pT9" firstAttribute="centerY" secondItem="ngY-CP-cHm" secondAttribute="centerY" id="L4h-TO-RVp"/>
+                            <constraint firstItem="53j-bf-pT9" firstAttribute="centerX" secondItem="ngY-CP-cHm" secondAttribute="centerX" id="XLM-7D-O3I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w57-bV-3fK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" id="Sts-MZ-3IC"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="353-g0-S8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MainTab" width="25" height="25"/>
+    </resources>
+</document>

@@ -8,27 +8,101 @@
 
 /* Begin PBXBuildFile section */
 		1BA960AA222F2944007AA338 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA960A9222F2944007AA338 /* AppDelegate.m */; };
-		1BA960AD222F2944007AA338 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA960AC222F2944007AA338 /* FirstViewController.m */; };
-		1BA960B0222F2944007AA338 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA960AF222F2944007AA338 /* SecondViewController.m */; };
 		1BA960B3222F2944007AA338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA960B1222F2944007AA338 /* Main.storyboard */; };
 		1BA960B5222F2946007AA338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA960B4222F2946007AA338 /* Assets.xcassets */; };
 		1BA960B8222F2946007AA338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA960B6222F2946007AA338 /* LaunchScreen.storyboard */; };
 		1BA960BB222F2946007AA338 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA960BA222F2946007AA338 /* main.m */; };
+		1BA960CB222F2C00007AA338 /* MainTab.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BA960C9222F2C00007AA338 /* MainTab.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BA960CE222F2C00007AA338 /* MainTab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA960C7222F2C00007AA338 /* MainTab.framework */; };
+		1BA960CF222F2C00007AA338 /* MainTab.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA960C7222F2C00007AA338 /* MainTab.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1BA960D5222F2D5C007AA338 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA960D4222F2D5C007AA338 /* Storyboard.storyboard */; };
+		1BA960E4222F2F8B007AA338 /* PluginProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BA960E2222F2F8B007AA338 /* PluginProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BA960E7222F2F8B007AA338 /* PluginProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA960E0222F2F8B007AA338 /* PluginProvider.framework */; };
+		1BA960E8222F2F8B007AA338 /* PluginProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA960E0222F2F8B007AA338 /* PluginProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1BA960EC222F2FA6007AA338 /* TabProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BA960DA222F2F1F007AA338 /* TabProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BA960EF222F2FCF007AA338 /* PluginManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BA960ED222F2FCF007AA338 /* PluginManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BA960F0222F2FCF007AA338 /* PluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA960EE222F2FCF007AA338 /* PluginManager.m */; };
+		1BA960F2222F339E007AA338 /* PluginProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA960E0222F2F8B007AA338 /* PluginProvider.framework */; };
+		1BA960F5222F3700007AA338 /* MainTabProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BA960F3222F3700007AA338 /* MainTabProvider.h */; };
+		1BA960F6222F3700007AA338 /* MainTabProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA960F4222F3700007AA338 /* MainTabProvider.m */; };
+		1BA96100222F37EF007AA338 /* AccountTab.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BA960FE222F37EF007AA338 /* AccountTab.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BA96103222F37EF007AA338 /* AccountTab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA960FC222F37EF007AA338 /* AccountTab.framework */; };
+		1BA96104222F37EF007AA338 /* AccountTab.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA960FC222F37EF007AA338 /* AccountTab.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1BA96108222F37F8007AA338 /* PluginProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA960E0222F2F8B007AA338 /* PluginProvider.framework */; };
+		1BA9610A222F380C007AA338 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA96109222F380C007AA338 /* Storyboard.storyboard */; };
+		1BA9610C222F3840007AA338 /* AccountTabProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA9610B222F3840007AA338 /* AccountTabProvider.swift */; };
+		1BA9610E222F4829007AA338 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA9610D222F4829007AA338 /* Media.xcassets */; };
+		1BA96110222F4832007AA338 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA9610F222F4832007AA338 /* Media.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BA960CC222F2C00007AA338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BA9609D222F2944007AA338 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BA960C6222F2C00007AA338;
+			remoteInfo = MainTab;
+		};
+		1BA960E5222F2F8B007AA338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BA9609D222F2944007AA338 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BA960DF222F2F8B007AA338;
+			remoteInfo = PluginProvider;
+		};
+		1BA96101222F37EF007AA338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BA9609D222F2944007AA338 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BA960FB222F37EF007AA338;
+			remoteInfo = AccountTab;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1BA960D3222F2C00007AA338 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1BA960E8222F2F8B007AA338 /* PluginProvider.framework in Embed Frameworks */,
+				1BA960CF222F2C00007AA338 /* MainTab.framework in Embed Frameworks */,
+				1BA96104222F37EF007AA338 /* AccountTab.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1BA960A5222F2944007AA338 /* PluginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PluginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA960A8222F2944007AA338 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1BA960A9222F2944007AA338 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1BA960AB222F2944007AA338 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		1BA960AC222F2944007AA338 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		1BA960AE222F2944007AA338 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		1BA960AF222F2944007AA338 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		1BA960B2222F2944007AA338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BA960B4222F2946007AA338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BA960B7222F2946007AA338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BA960B9222F2946007AA338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA960BA222F2946007AA338 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BA960C7222F2C00007AA338 /* MainTab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MainTab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA960C9222F2C00007AA338 /* MainTab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTab.h; sourceTree = "<group>"; };
+		1BA960CA222F2C00007AA338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA960D4222F2D5C007AA338 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		1BA960DA222F2F1F007AA338 /* TabProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabProvider.h; sourceTree = "<group>"; };
+		1BA960E0222F2F8B007AA338 /* PluginProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PluginProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA960E2222F2F8B007AA338 /* PluginProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginProvider.h; sourceTree = "<group>"; };
+		1BA960E3222F2F8B007AA338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA960ED222F2FCF007AA338 /* PluginManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluginManager.h; sourceTree = "<group>"; };
+		1BA960EE222F2FCF007AA338 /* PluginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PluginManager.m; sourceTree = "<group>"; };
+		1BA960F3222F3700007AA338 /* MainTabProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabProvider.h; sourceTree = "<group>"; };
+		1BA960F4222F3700007AA338 /* MainTabProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabProvider.m; sourceTree = "<group>"; };
+		1BA960FC222F37EF007AA338 /* AccountTab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AccountTab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA960FE222F37EF007AA338 /* AccountTab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountTab.h; sourceTree = "<group>"; };
+		1BA960FF222F37EF007AA338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA96109222F380C007AA338 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		1BA9610B222F3840007AA338 /* AccountTabProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTabProvider.swift; sourceTree = "<group>"; };
+		1BA9610D222F4829007AA338 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		1BA9610F222F4832007AA338 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +110,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA960E7222F2F8B007AA338 /* PluginProvider.framework in Frameworks */,
+				1BA960CE222F2C00007AA338 /* MainTab.framework in Frameworks */,
+				1BA96103222F37EF007AA338 /* AccountTab.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA960C4222F2C00007AA338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA960F2222F339E007AA338 /* PluginProvider.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA960DD222F2F8B007AA338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA960F9222F37EF007AA338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA96108222F37F8007AA338 /* PluginProvider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +146,11 @@
 			isa = PBXGroup;
 			children = (
 				1BA960A7222F2944007AA338 /* PluginApp */,
+				1BA960E1222F2F8B007AA338 /* PluginProvider */,
+				1BA960C8222F2C00007AA338 /* MainTab */,
+				1BA960FD222F37EF007AA338 /* AccountTab */,
 				1BA960A6222F2944007AA338 /* Products */,
+				1BA960F1222F339E007AA338 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +158,9 @@
 			isa = PBXGroup;
 			children = (
 				1BA960A5222F2944007AA338 /* PluginApp.app */,
+				1BA960C7222F2C00007AA338 /* MainTab.framework */,
+				1BA960E0222F2F8B007AA338 /* PluginProvider.framework */,
+				1BA960FC222F37EF007AA338 /* AccountTab.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,10 +170,6 @@
 			children = (
 				1BA960A8222F2944007AA338 /* AppDelegate.h */,
 				1BA960A9222F2944007AA338 /* AppDelegate.m */,
-				1BA960AB222F2944007AA338 /* FirstViewController.h */,
-				1BA960AC222F2944007AA338 /* FirstViewController.m */,
-				1BA960AE222F2944007AA338 /* SecondViewController.h */,
-				1BA960AF222F2944007AA338 /* SecondViewController.m */,
 				1BA960B1222F2944007AA338 /* Main.storyboard */,
 				1BA960B4222F2946007AA338 /* Assets.xcassets */,
 				1BA960B6222F2946007AA338 /* LaunchScreen.storyboard */,
@@ -76,7 +179,81 @@
 			path = PluginApp;
 			sourceTree = "<group>";
 		};
+		1BA960C8222F2C00007AA338 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				1BA960C9222F2C00007AA338 /* MainTab.h */,
+				1BA960CA222F2C00007AA338 /* Info.plist */,
+				1BA960D4222F2D5C007AA338 /* Storyboard.storyboard */,
+				1BA960F3222F3700007AA338 /* MainTabProvider.h */,
+				1BA960F4222F3700007AA338 /* MainTabProvider.m */,
+				1BA9610D222F4829007AA338 /* Media.xcassets */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		1BA960E1222F2F8B007AA338 /* PluginProvider */ = {
+			isa = PBXGroup;
+			children = (
+				1BA960E2222F2F8B007AA338 /* PluginProvider.h */,
+				1BA960DA222F2F1F007AA338 /* TabProvider.h */,
+				1BA960E3222F2F8B007AA338 /* Info.plist */,
+				1BA960ED222F2FCF007AA338 /* PluginManager.h */,
+				1BA960EE222F2FCF007AA338 /* PluginManager.m */,
+			);
+			path = PluginProvider;
+			sourceTree = "<group>";
+		};
+		1BA960F1222F339E007AA338 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BA960FD222F37EF007AA338 /* AccountTab */ = {
+			isa = PBXGroup;
+			children = (
+				1BA960FE222F37EF007AA338 /* AccountTab.h */,
+				1BA960FF222F37EF007AA338 /* Info.plist */,
+				1BA96109222F380C007AA338 /* Storyboard.storyboard */,
+				1BA9610B222F3840007AA338 /* AccountTabProvider.swift */,
+				1BA9610F222F4832007AA338 /* Media.xcassets */,
+			);
+			path = AccountTab;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BA960C2222F2C00007AA338 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA960F5222F3700007AA338 /* MainTabProvider.h in Headers */,
+				1BA960CB222F2C00007AA338 /* MainTab.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA960DB222F2F8B007AA338 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA960E4222F2F8B007AA338 /* PluginProvider.h in Headers */,
+				1BA960EF222F2FCF007AA338 /* PluginManager.h in Headers */,
+				1BA960EC222F2FA6007AA338 /* TabProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA960F7222F37EF007AA338 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA96100222F37EF007AA338 /* AccountTab.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1BA960A4222F2944007AA338 /* PluginApp */ = {
@@ -86,15 +263,73 @@
 				1BA960A1222F2944007AA338 /* Sources */,
 				1BA960A2222F2944007AA338 /* Frameworks */,
 				1BA960A3222F2944007AA338 /* Resources */,
+				1BA960D3222F2C00007AA338 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1BA960CD222F2C00007AA338 /* PBXTargetDependency */,
+				1BA960E6222F2F8B007AA338 /* PBXTargetDependency */,
+				1BA96102222F37EF007AA338 /* PBXTargetDependency */,
 			);
 			name = PluginApp;
 			productName = PluginApp;
 			productReference = 1BA960A5222F2944007AA338 /* PluginApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1BA960C6222F2C00007AA338 /* MainTab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA960D0222F2C00007AA338 /* Build configuration list for PBXNativeTarget "MainTab" */;
+			buildPhases = (
+				1BA960C2222F2C00007AA338 /* Headers */,
+				1BA960C3222F2C00007AA338 /* Sources */,
+				1BA960C4222F2C00007AA338 /* Frameworks */,
+				1BA960C5222F2C00007AA338 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MainTab;
+			productName = MainTab;
+			productReference = 1BA960C7222F2C00007AA338 /* MainTab.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1BA960DF222F2F8B007AA338 /* PluginProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA960E9222F2F8B007AA338 /* Build configuration list for PBXNativeTarget "PluginProvider" */;
+			buildPhases = (
+				1BA960DB222F2F8B007AA338 /* Headers */,
+				1BA960DC222F2F8B007AA338 /* Sources */,
+				1BA960DD222F2F8B007AA338 /* Frameworks */,
+				1BA960DE222F2F8B007AA338 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PluginProvider;
+			productName = PluginProvider;
+			productReference = 1BA960E0222F2F8B007AA338 /* PluginProvider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1BA960FB222F37EF007AA338 /* AccountTab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA96105222F37EF007AA338 /* Build configuration list for PBXNativeTarget "AccountTab" */;
+			buildPhases = (
+				1BA960F7222F37EF007AA338 /* Headers */,
+				1BA960F8222F37EF007AA338 /* Sources */,
+				1BA960F9222F37EF007AA338 /* Frameworks */,
+				1BA960FA222F37EF007AA338 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AccountTab;
+			productName = AccountTab;
+			productReference = 1BA960FC222F37EF007AA338 /* AccountTab.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -107,6 +342,17 @@
 				TargetAttributes = {
 					1BA960A4222F2944007AA338 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					1BA960C6222F2C00007AA338 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					1BA960DF222F2F8B007AA338 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					1BA960FB222F37EF007AA338 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -124,6 +370,9 @@
 			projectRoot = "";
 			targets = (
 				1BA960A4222F2944007AA338 /* PluginApp */,
+				1BA960DF222F2F8B007AA338 /* PluginProvider */,
+				1BA960C6222F2C00007AA338 /* MainTab */,
+				1BA960FB222F37EF007AA338 /* AccountTab */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +388,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BA960C5222F2C00007AA338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA9610E222F4829007AA338 /* Media.xcassets in Resources */,
+				1BA960D5222F2D5C007AA338 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA960DE222F2F8B007AA338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA960FA222F37EF007AA338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA96110222F4832007AA338 /* Media.xcassets in Resources */,
+				1BA9610A222F380C007AA338 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -146,14 +420,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA960B0222F2944007AA338 /* SecondViewController.m in Sources */,
 				1BA960AA222F2944007AA338 /* AppDelegate.m in Sources */,
 				1BA960BB222F2946007AA338 /* main.m in Sources */,
-				1BA960AD222F2944007AA338 /* FirstViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA960C3222F2C00007AA338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA960F6222F3700007AA338 /* MainTabProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA960DC222F2F8B007AA338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA960F0222F2FCF007AA338 /* PluginManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA960F8222F37EF007AA338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA9610C222F3840007AA338 /* AccountTabProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BA960CD222F2C00007AA338 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BA960C6222F2C00007AA338 /* MainTab */;
+			targetProxy = 1BA960CC222F2C00007AA338 /* PBXContainerItemProxy */;
+		};
+		1BA960E6222F2F8B007AA338 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BA960DF222F2F8B007AA338 /* PluginProvider */;
+			targetProxy = 1BA960E5222F2F8B007AA338 /* PBXContainerItemProxy */;
+		};
+		1BA96102222F37EF007AA338 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BA960FB222F37EF007AA338 /* AccountTab */;
+			targetProxy = 1BA96101222F37EF007AA338 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1BA960B1222F2944007AA338 /* Main.storyboard */ = {
@@ -290,6 +604,7 @@
 		1BA960BF222F2946007AA338 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4U57NCZEKP;
@@ -307,6 +622,7 @@
 		1BA960C0222F2946007AA338 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4U57NCZEKP;
@@ -318,6 +634,181 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nachbaur.PluginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1BA960D1222F2C00007AA338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4U57NCZEKP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MainTab/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nachbaur.MainTab;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1BA960D2222F2C00007AA338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4U57NCZEKP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MainTab/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nachbaur.MainTab;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1BA960EA222F2F8B007AA338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4U57NCZEKP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PluginProvider/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nachbaur.PluginProvider;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1BA960EB222F2F8B007AA338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4U57NCZEKP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PluginProvider/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nachbaur.PluginProvider;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1BA96106222F37EF007AA338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4U57NCZEKP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AccountTab/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nachbaur.AccountTab;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1BA96107222F37EF007AA338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4U57NCZEKP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AccountTab/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nachbaur.AccountTab;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -338,6 +829,33 @@
 			buildConfigurations = (
 				1BA960BF222F2946007AA338 /* Debug */,
 				1BA960C0222F2946007AA338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BA960D0222F2C00007AA338 /* Build configuration list for PBXNativeTarget "MainTab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA960D1222F2C00007AA338 /* Debug */,
+				1BA960D2222F2C00007AA338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BA960E9222F2F8B007AA338 /* Build configuration list for PBXNativeTarget "PluginProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA960EA222F2F8B007AA338 /* Debug */,
+				1BA960EB222F2F8B007AA338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BA96105222F37EF007AA338 /* Build configuration list for PBXNativeTarget "AccountTab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA96106222F37EF007AA338 /* Debug */,
+				1BA96107222F37EF007AA338 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
